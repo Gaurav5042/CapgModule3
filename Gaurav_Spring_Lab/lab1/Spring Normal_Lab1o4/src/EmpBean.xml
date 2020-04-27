@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-3.1.xsd"
+		
+		
+>
+  <bean id="helloEmp" class="beanEmp" scope="singleton">
+  	<property name="eid" value="42"></property>
+    <property name="ename" value="Garv"></property>
+    <!--  <property name="bu" value="Finance"></property>-->
+    <property name="sal" value="1552142"></property>
+     <property name="age" value="21"></property>
+    
+  
+  </bean>
+  
+    <bean id="helloEmp1" class="beanEmp" scope="singleton">
+  	<property name="eid" value="22"></property>
+    <property name="ename" value="Matric"></property>
+    <!--  <property name="bu" value="Finance"></property>-->
+    <property name="sal" value="1352142"></property>
+    <property name="age" value="22"></property>
+    
+  
+  </bean>
+   
+    <bean id="helloBu" class="beanSBU" scope="singleton">
+  	<property name="sid" value="1002"></property>
+    <property name="name" value="Finance Sector"></property>
+    <property name="head" value="Neo Singh"></property>
+    
+  
+  </bean>
+
+</beans>
